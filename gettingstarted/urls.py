@@ -3,8 +3,6 @@ from django.urls import path, include
 from django.contrib import admin
 from hello.views import index
 
-import hello.views
-
 # To add a new path, first import the app:
 # import blog
 #
@@ -16,4 +14,5 @@ import hello.views
 urlpatterns = [
     path("",index),
     path("admin/", admin.site.urls),
+    path('portfolio/',index)
 ]
