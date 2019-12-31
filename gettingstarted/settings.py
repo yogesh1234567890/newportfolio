@@ -78,11 +78,11 @@ WSGI_APPLICATION = "gettingstarted.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE" : "django.db.backends.mysql",
-        "NAME":"portfolio",
-        "HOST":"127.0.0.1",
-        "USER":"ROOT",
-        "PASSWORD":"",
+        "ENGINE" : "django.db.backends.postgresql_psycopg2",
+        "NAME":"d4l7k23shjslmf",
+        "HOST":"ec2-54-235-86-101.compute-1.amazonaws.com",
+        "USER":"bjrqtbwqgaahhvT",
+        "PASSWORD":"8384ea83b189a03b7d54fc78a718f294de11695220ca1f6cc88b2d06b2c1dd88",
     }
 }
 
