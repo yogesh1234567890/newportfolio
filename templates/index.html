@@ -8,7 +8,10 @@
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
                 <div class="text-center">
-                    <div class="author-img" style="background-image: url({% static 'images/about.jpg'%});"></div>
+                {% for d in display %}
+                    <div class="author-img" style="background-image: url({{d.logo_image.url}});"></div>
+                    {% endfor %}
+                    {% comment %} {% static 'images/about.jpg'%} {% endcomment %}
                     <h1 id="colorlib-logo"><a href="index.html">Yogesh Bhattarai</a></h1>
                     <span class="position"><a href="#">Programmer/Designer</a> in Nepal</span>
                      <a href="/form/">Add Images</a>
