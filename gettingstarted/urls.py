@@ -1,18 +1,12 @@
 from django.urls import path, include
 
 from django.contrib import admin
-from hello.views import index
-
-# To add a new path, first import the app:
-# import blog
-#
-# Then add the new path:
-# path('blog/', blog.urls, name="blog")
-#
-# Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
+from hello.views import index,Photos,fronts
 
 urlpatterns = [
     path("",index),
     path("admin/", admin.site.urls),
-    path('portfolio/',index)
+    path('portfolio/',index),
+    path('/form',Photos),
+    path("portfolio/",fronts),
 ]
