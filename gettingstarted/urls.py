@@ -7,6 +7,6 @@ urlpatterns = [
     path("",index),
     path("admin/", admin.site.urls),
     path('portfolio/',index),
-    path('/form',Photos),
+    path('form/',Photos),
     path("portfolio/",fronts),
 ]
