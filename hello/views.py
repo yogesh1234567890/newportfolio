@@ -45,7 +45,7 @@ def Photos(request):
 
     return render(request, "form.html", {'form': form})
 
-@login_required(login_url='login')
+@login_required
 def fronts(request):
     return render(request, 'index.html', {
         'display': Photos.objects.all(), })
