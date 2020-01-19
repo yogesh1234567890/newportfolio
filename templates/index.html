@@ -8,10 +8,7 @@
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
                 <div class="text-center">
-                {% for d in display %}
-                    <div class="author-img" style="background-image: url({{d.logo_image.url}});"></div>
-                    {% endfor %}
-                    {% comment %} {% static 'images/about.jpg'%} {% endcomment %}
+                    <div class="author-img" style="background-image: url({% static 'images/about.jpg'%});"></div>
                     <h1 id="colorlib-logo"><a href="index.html">Yogesh Bhattarai</a></h1>
                     <span class="position"><a href="#">Programmer/Designer</a> in Nepal</span>
                      <a href="/form/">Add Images</a>
@@ -26,13 +23,14 @@
                             <li><a href="#" data-nav-section="education">Education</a></li>
 
                             <li><a href="#" data-nav-section="work">Work</a></li>
-                            <li><a href="#" data-nav-section="contact">Contact</a></li>
+                            <li><a href="#" data-nav-section="contact">Hire me</a></li>
+              
                         </ul>
                     </div>
                 </nav>
-
+                <span><a href="{% url 'logout' %}">Logout</a></span>
             </aside>
-
+           
             <div id="colorlib-main">
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
                     <div class="flexslider js-fullheight">
@@ -522,7 +520,7 @@
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
                                 <span class="heading-meta">Get in Touch</span>
-                                <h2 class="colorlib-heading">Contact</h2>
+                                <h2 class="colorlib-heading">Hire me</h2>
                             </div>
                         </div>
                         <div class="row">
