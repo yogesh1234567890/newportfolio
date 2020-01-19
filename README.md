@@ -1,0 +1,7 @@
+# newportfolio
+create a /env file with 
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
+
+SOCIAL_AUTH_FACEBOOK_KEY = ''
+SOCIAL_AUTH_FACEBOOK_SECRET=''
